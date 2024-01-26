@@ -1,5 +1,6 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
+import Home from '../../components/Home'
 
 const Homepage = () => {
     const navigate = useNavigate()
@@ -10,7 +11,7 @@ const Homepage = () => {
 
     return (
         <div>
-            Homepage
+            <Home />
             <button onClick={onNavigate}>Navigate </button>
         </div>
     )
