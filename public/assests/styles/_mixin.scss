@@ -1,0 +1,16 @@
+@mixin vertical-list {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+@mixin horizontal-list {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+@mixin centered-list {
+    @include horizontal-list;
+    justify-content: center;
+}

@@ -1,11 +1,15 @@
-import React, { useContext } from 'react'
-import Appcontext from '../../Appcontext'
+import React from 'react'
+import './Home.scss'
+import StudentGrades from '../StudentGrades'
+import StudentTable from '../StudentTable/StudentTable'
 
 const Home = () => {
-    let studentsData = useContext(Appcontext)
-
-    console.log('studentsData', studentsData)
-    return <div className='home'>{studentsData[0].name}</div>
+    return (
+        <div className='home'>
+            <StudentGrades />
+            <StudentTable />
+        </div>
+    )
 }
 
 export default Home

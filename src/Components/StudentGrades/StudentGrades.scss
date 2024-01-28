@@ -1,0 +1,5 @@
+@import '../../../public/assests/styles/mixin';
+
+.studentGrades_block {
+    @include centered-list;
+}
