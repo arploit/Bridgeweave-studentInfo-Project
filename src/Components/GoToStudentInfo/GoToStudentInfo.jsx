@@ -8,7 +8,6 @@ const GoToStudentInfo = ({ selectedStudent }) => {
     const navigate = useNavigate()
 
     const onButtonClick = () => {
-        console.log('selectedStudent', selectedStudent)
         navigate(`/studentInfo/${selectedStudent}`)
     }
     return (

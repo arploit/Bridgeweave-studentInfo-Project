@@ -1,7 +1,8 @@
 import React from 'react'
+import StudentInfo from '../../components/StudentInfo'
 
 const Infopage = () => {
-    return <div>Infopage</div>
+    return <StudentInfo />
 }
 
 export default Infopage

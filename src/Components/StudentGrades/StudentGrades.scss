@@ -2,6 +2,7 @@
 
 .studentGrades_block {
     @include vertical-list;
+    align-items: safe center;
 }
 
 .PieChart_block {
