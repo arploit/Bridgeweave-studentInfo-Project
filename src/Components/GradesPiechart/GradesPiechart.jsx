@@ -1,10 +1,9 @@
 import React, { useContext } from 'react'
 import { PieChart } from '@mui/x-charts/PieChart'
-import Appcontext from '../../Appcontext'
 import { transformDataForPieChart } from '../../utils/helper'
+import studentsData from '../../dataJson/studentsData'
 
 const GradesPiechart = ({ selectedStudent }) => {
-    const studentsData = useContext(Appcontext)
     let PieChartData = React.useMemo(
         () => transformDataForPieChart(studentsData),
         [studentsData]

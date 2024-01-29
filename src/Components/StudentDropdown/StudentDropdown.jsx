@@ -1,13 +1,12 @@
-import React, { useContext, useState } from 'react'
+import React, { useState } from 'react'
 import { Dropdown } from '@mui/base/Dropdown'
 import { MenuButton } from '@mui/base/MenuButton'
 import { Menu } from '@mui/base/Menu'
 import { MenuItem } from '@mui/base/MenuItem'
-import Appcontext from '../../Appcontext'
 import { styled } from '@mui/system'
+import studentsData from '../../dataJson/studentsData'
 
 const StudentDropdown = ({ selectAStudent }) => {
-    const studentsData = useContext(Appcontext)
     const [selectedStudent, setSelectedStudent] = useState(studentsData[0].name)
     const createHandleMenuClick = (currentStudent, id) => {
         selectAStudent(id)

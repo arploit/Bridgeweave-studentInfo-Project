@@ -1,5 +1,9 @@
 @import '../../../public/assests/styles/mixin';
 
 .studentGrades_block {
+    @include vertical-list;
+}
+
+.PieChart_block {
     @include centered-list;
 }

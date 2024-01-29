@@ -1,0 +1,6 @@
+@import '../../../public/assests/styles/mixin';
+
+.studentTable_block {
+    @include vertical-list;
+    margin-top: 4rem;
+}

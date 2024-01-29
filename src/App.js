@@ -2,15 +2,9 @@ import React from 'react'
 import './index.scss'
 
 import Routespath from './Routespath'
-import Appcontext from './Appcontext'
-import studentsData from './dataJson/studentsData'
 
 function App() {
-    return (
-        <Appcontext.Provider value={studentsData}>
-            <Routespath />
-        </Appcontext.Provider>
-    )
+    return <Routespath />
 }
 
 export default App
