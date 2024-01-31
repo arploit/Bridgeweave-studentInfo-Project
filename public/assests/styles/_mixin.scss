@@ -1,16 +1,24 @@
 @mixin vertical-list {
-    display: flex;
+    @include display-flex-column;
     align-items: center;
-    flex-direction: column;
 }
 
 @mixin horizontal-list {
-    display: flex;
+    @include display-flex-row;
     align-items: center;
-    flex-direction: row;
 }
 
 @mixin centered-list {
     @include horizontal-list;
     justify-content: center;
+}
+
+@mixin display-flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin display-flex-column {
+    display: flex;
+    flex-direction: column;
 }

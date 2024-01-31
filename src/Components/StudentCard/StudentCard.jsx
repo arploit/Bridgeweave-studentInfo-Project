@@ -6,7 +6,7 @@ import Box from '@mui/material/Box'
 import Paper from '@mui/material/Paper'
 import { styled } from '@mui/material/styles'
 
-import { Avatar, Button } from '@mui/material'
+import { Avatar } from '@mui/material'
 
 const StudentCard = () => {
     let { id } = useParams()
@@ -81,9 +81,6 @@ const StudentCard = () => {
                     </GradesPaper>
                 </Box>
             </Box>
-            <Button variant='contained' onClick={() => console.log('hem')}>
-                See Student Information
-            </Button>
         </div>
     )
 }

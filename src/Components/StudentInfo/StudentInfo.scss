@@ -1,0 +1,11 @@
+@import '../../../public/assests/styles/mixin';
+
+.studentInfo_block {
+    @include display-flex-column;
+
+    .studentInfo_CTA {
+        @include centered-list;
+        margin: 1rem;
+        gap: 1rem;
+    }
+}
