@@ -33,7 +33,7 @@
 
 ## To Run the application
 
-    follow below steps:
+    `follow below steps:`
 
 ```
 1. git clone https://github.com/arploit/Bridgeweave-studentInfo-Project.git
@@ -42,5 +42,3 @@
 4. yarn start
 5. Go to http://localhost:3000/home
 ```
-
----
